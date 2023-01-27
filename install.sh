@@ -8,3 +8,6 @@ openssl req -x509 -newkey rsa:4096 -days 365 -nodes -sha256 -keyout certs/tls.ke
 
 mkdir auth
 docker run --rm --entrypoint htpasswd registry:2.6.2 -Bbn $1 $2 > auth/htpasswd
+
+kubectl create secret tls registry-certs-secret --cert=./certs/tls.crt --key=./certs/tls.key
+kubectl create secret generic registry-auth-secret --from-file=./auth/htpasswd
