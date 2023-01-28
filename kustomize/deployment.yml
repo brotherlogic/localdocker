@@ -59,7 +59,7 @@ spec:
           claimName: docker-repo-pvc
       - name: certs-vol
         secret:
-          secretName: certs-secret
+          secretName: registry-certs-secret
       - name: auth-vol
         secret:
-          secretName: auth-secret
+          secretName: registry-auth-secret
