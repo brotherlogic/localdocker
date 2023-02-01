@@ -25,6 +25,6 @@ metadata:
   name: tls-secret
   namespace: docker
 data:
-  tls.crt: base64 encoded cert
-  tls.key: base64 encoded key
+  tls.crt: cert
+  tls.key: key
 type: kubernetes.io/tls
