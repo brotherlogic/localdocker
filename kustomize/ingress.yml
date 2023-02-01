@@ -6,7 +6,7 @@ metadata:
 
 spec:
   tls: 
-    hosts:
+  - hosts:
       - registry.brotherlogic-backend.com
     secretName: tls-secret
   rules:
