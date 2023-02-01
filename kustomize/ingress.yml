@@ -16,15 +16,3 @@ spec:
                 name:  docker
                 port:
                   number: 5000
-
----
-
-apiVersion: v1
-kind: Secret
-metadata:
-  name: tls-secret
-  namespace: docker
-data:
-  tls.crt: cert
-  tls.key: key
-type: kubernetes.io/tls
