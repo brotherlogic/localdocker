@@ -5,8 +5,12 @@ metadata:
   namespace: docker
 
 spec:
+  tls: 
+    hosts:
+      - registry.brotherlogic-backend.com
+    secretName: tls-secret
   rules:
-    - host: registry.brotherlogic-backend.com
+   - host: registry.brotherlogic-backend.com
       secretName: tls-secret
       http:
         paths:
