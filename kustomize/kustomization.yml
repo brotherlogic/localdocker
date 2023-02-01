@@ -5,3 +5,4 @@ resources:
   - service.yml
   - volume.yml
   - ingress.yml
+  - namespace.yml

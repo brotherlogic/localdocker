@@ -4,7 +4,7 @@ metadata:
   name: docker-registry
   namespace: docker
 spec:
-  minReadySeconds: 3
+  minReadySeconds: 4
   revisionHistoryLimit: 5
   progressDeadlineSeconds: 60
   strategy:
