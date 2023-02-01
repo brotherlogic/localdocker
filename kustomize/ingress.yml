@@ -22,7 +22,7 @@ spec:
 apiVersion: v1
 kind: Secret
 metadata:
-  name: testsecret-tls
+  name: tls-secret
   namespace: docker
 data:
   tls.crt: base64 encoded cert
