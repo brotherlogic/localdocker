@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: docker-ingress
+  namespace: docker
+
+spec:
+  rules:
+    - host: registry.brotherlogic-backend.com
+      http:
+        paths:
+          - path: /
+            backend:
+              service:
+                name:  docker
+                port:
+                  number: 5000
