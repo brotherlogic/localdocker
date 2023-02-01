@@ -10,13 +10,13 @@ spec:
       - registry.brotherlogic-backend.com
     secretName: tls-secret
   rules:
-    - host: registry.brotherlogic-backend.com
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name:  docker
-                port:
-                  number: 5000
+  - host: registry.brotherlogic-backend.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name:  docker
+            port:
+              number: 5000
