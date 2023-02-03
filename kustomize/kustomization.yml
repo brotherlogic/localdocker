@@ -8,3 +8,4 @@ resources:
   - namespace.yml
   - certs.yml
   - crds.yml
+  - ingress-middle.yml
