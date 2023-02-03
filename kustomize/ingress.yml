@@ -3,12 +3,15 @@ kind: Ingress
 metadata:
   name: docker-ingress
   namespace: docker
-
+  annotations:
+    kubernetes.io/ingress.class: traefik
+    cert-manager.io/cluster-issuer: letsencrypt-prod
 spec:
   tls: 
-  - hosts:
-      - registry.brotherlogic-backend.com
-    secretName: tls-secret
+   tls:
+    - secretName: registry-brotherlogic-backend-com-tls
+      hosts:
+        - registry.brotherlogic-backend.com
   rules:
   - host: registry.brotherlogic-backend.com
     http:
