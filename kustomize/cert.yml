@@ -1,6 +1,6 @@
 apiVersion: cert-manager.io/v1alpha2
 kind: Certificate
- metadata:
+metadata:
   name: certificate-name
 spec:
   secretName: tls-cert
