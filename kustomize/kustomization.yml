@@ -8,4 +8,4 @@ resources:
   - namespace.yml
   - certs.yml
   - cert.yml
-  - crd.yml
+  - crds.yml
