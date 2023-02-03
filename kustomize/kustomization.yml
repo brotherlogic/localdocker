@@ -7,5 +7,4 @@ resources:
   - ingress.yml
   - namespace.yml
   - certs.yml
-  - cert.yml
   - crds.yml
