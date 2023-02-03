@@ -6,3 +6,4 @@ resources:
   - volume.yml
   - ingress.yml
   - namespace.yml
+  - certs.yml
