@@ -6,6 +6,7 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: traefik
     cert-manager.io/cluster-issuer: letsencrypt-prod
+    traefik.ingress.kubernetes.io/router.middlewares: test-auth
 spec:
   tls: 
     - secretName: registry-brotherlogic-backend-com-tls
