@@ -19,5 +19,5 @@ metadata:
   name: authsecret
   namespace: docker
 data:
-  users: |1
+  users: |
     c2ltb246JGFwcjEkOEw0RnRvZDQkNy9vY0Y0RWdEcmIvR3hkbTdZM2dnMAoK
