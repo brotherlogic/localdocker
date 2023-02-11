@@ -49,6 +49,3 @@ spec:
       - name: certs-vol
         secret:
           secretName: registry-certs-secret
-      - name: auth-vol
-        secret:
-          secretName: registry-auth-secret
