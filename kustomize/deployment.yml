@@ -36,9 +36,6 @@ spec:
         volumeMounts:
         - name: repo-vol
           mountPath: "/var/lib/registry"
-        - name: certs-vol
-          mountPath: "/certs"
-          readOnly: true
         - name: auth-vol
           mountPath: "/auth"
           readOnly: true
@@ -46,6 +43,6 @@ spec:
       - name: repo-vol
         persistentVolumeClaim:
           claimName: docker-repo-pvc
-      - name: certs-vol
+      - name: auth-vol
         secret:
-          secretName: registry-certs-secret
+          secretName: auth-secret
