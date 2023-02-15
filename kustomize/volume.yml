@@ -8,8 +8,9 @@ spec:
     storage: 1Gi
   accessModes:
   - ReadWriteOnce
-  hostPath:
-    path: /tmp/repository
+  nfs:
+    server: toru
+    path: "/media/raid/kube/docker"
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
