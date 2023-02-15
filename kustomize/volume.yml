@@ -4,6 +4,7 @@ metadata:
   name: docker-repo-pv
   namespace: docker
 spec:
+  storageClassName: docker-storage
   capacity:
     storage: 1Gi
   accessModes:
@@ -17,6 +18,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: docker-repo-pvc
 spec:
+  storageClassName: docker-storage
   accessModes:
   - ReadWriteOnce
   resources:
