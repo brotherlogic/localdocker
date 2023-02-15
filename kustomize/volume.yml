@@ -9,7 +9,7 @@ spec:
   accessModes:
   - ReadWriteOnce
   nfs:
-    server: toru
+    server: newrunner
     path: "/media/raid/kube/docker"
 ---
 apiVersion: v1
