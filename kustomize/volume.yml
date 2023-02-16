@@ -4,7 +4,7 @@ metadata:
   name: docker-repo-pv
   namespace: docker
 spec:
-  storageClassName: slow
+  storageClassName: nfs
   capacity:
     storage: 1Gi
   accessModes:
@@ -18,7 +18,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: docker-repo-pvc
 spec:
-  storageClassName: slow
+  storageClassName: nfs
   accessModes:
   - ReadWriteOnce
   resources:
