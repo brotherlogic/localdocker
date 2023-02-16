@@ -9,3 +9,4 @@ resources:
   - certs.yml
   - crds.yml
   - ingress-middle.yml
+  - storage.yml
