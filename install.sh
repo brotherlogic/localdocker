@@ -6,4 +6,4 @@
 mkdir -p auth
 docker run --rm --entrypoint htpasswd registry:2.6.2 -Bbn $1 $2 > auth/htpasswd
  
-kubectl create secret generic auth-secret --from-file=auth/htpasswd
+kubectl create secret generic auth-secret --from-file=auth/htpasswd -n docker
