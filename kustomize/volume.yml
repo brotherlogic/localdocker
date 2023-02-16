@@ -4,7 +4,6 @@ metadata:
   name: docker-repo-pv
   namespace: docker
 spec:
-  storageClassName: docker-storage
   capacity:
     storage: 1Gi
   accessModes:
