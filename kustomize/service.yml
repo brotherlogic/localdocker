@@ -4,8 +4,9 @@ metadata:
   name: docker-registry
   namespace: docker
 spec:
+  type: NodePort
   selector:
     app: docker
   ports:
-  - port: 5000
-    targetPort: 5000
+    - port: 5000
+      targetPort: 5000
