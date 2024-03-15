@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: registry
-      image: registry:latest
+      image: registry:2.8.3
       volumeMounts:
         - name: repo-vol
           mountPath: "/var/lib/registry"
