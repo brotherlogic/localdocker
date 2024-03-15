@@ -30,19 +30,19 @@ spec:
           cpu: 100m
           memory: 32Mi
       containers:
-      - name: registry
-        image: registry:2.6.2
-        imagePullPolicy: IfNotPresent
-        volumeMounts:
-        - name: repo-vol
-          mountPath: "/var/lib/registry"
-        - name: auth-vol
-          mountPath: "/auth"
-          readOnly: true
+        - name: registry
+          image: registry:2.8.3
+          imagePullPolicy: IfNotPresent
+          volumeMounts:
+            - name: repo-vol
+              mountPath: "/var/lib/registry"
+            - name: auth-vol
+              mountPath: "/auth"
+              readOnly: true
       volumes:
-      - name: repo-vol
-        persistentVolumeClaim:
-          claimName: docker-repo-pvc
-      - name: auth-vol
-        secret:
-          secretName: auth-secret
+        - name: repo-vol
+          persistentVolumeClaim:
+            claimName: docker-repo-pvc
+        - name: auth-vol
+          secret:
+            secretName: auth-secret
