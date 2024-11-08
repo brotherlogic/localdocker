@@ -22,6 +22,7 @@ spec:
       labels:
         app: docker
     spec:
+      nodeName: klust1
       resources:
         limits:
           cpu: 1000m

@@ -5,6 +5,7 @@ metadata:
   labels:
     app: registry
 spec:
+  nodeName: klust1
   containers:
     - name: registry
       image: registry:2.8.3
