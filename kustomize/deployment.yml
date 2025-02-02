@@ -22,7 +22,6 @@ spec:
       labels:
         app: docker
     spec:
-      nodeName: tclust1
       resources:
         limits:
           cpu: 1000m
