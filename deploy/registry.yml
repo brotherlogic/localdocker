@@ -5,7 +5,6 @@ metadata:
   labels:
     app: registry
 spec:
-  nodeName: tclust2
   containers:
     - name: registry
       image: registry:2.8.3
